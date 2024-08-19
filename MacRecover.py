@@ -1,4 +1,4 @@
-import os
+import sys
 import subprocess
 print("""
  __  __            ____                                ____       
@@ -28,7 +28,7 @@ if selection == 1:
         subprocess.run(['curl', ['-O'], 'https://swcdn.apple.com/content/downloads/14/38/042-45246-A_NLFOFLCJFZ/jk992zbv98sdzz3rgc7mrccjl3l22ruk1c/InstallAssistant.pkg'])
     else:
         print("Not confirmed, quitting")
-        os.quit(1)
+        sys.exit()
 elif selection == 2:
     os = "MacOS Monterey"
     print(f"Let me confirm, You are downloading {os}, and the file will be stored in the same directory as the python file, if confirmed, Please input Y/N")
@@ -37,7 +37,7 @@ elif selection == 2:
         subprocess.run(['curl', ['-O'], 'https://swcdn.apple.com/content/downloads/34/21/062-40406-A_GZQ27OUQER/ggclib72ow1omcvfexvp84bc9x5ei5tyqu/InstallAssistant.pkg'])
     else:
         print("Not confirmed, quitting")
-        os.quit(1)
+        sys.exit()
 elif selection == 3:
     os = "MacOS Ventura"
     print(f"Let me confirm, You are downloading {os}, and the file will be stored in the same directory as the python file, if confirmed, Please input Y/N")
@@ -46,7 +46,7 @@ elif selection == 3:
         subprocess.run(['curl', ['-O'], 'https://swcdn.apple.com/content/downloads/34/21/062-40406-A_GZQ27OUQER/ggclib72ow1omcvfexvp84bc9x5ei5tyqu/InstallAssistant.pkg'])
     else:
         print("Not confirmed, quitting")
-        os.quit(1)
+        sys.exit()
 elif selection == 4:
     os = "MacOS Sonoma"
     print(f"Let me confirm, You are downloading {os}, and the file will be stored in the same directory as the python file, if confirmed, Please input Y/N")
@@ -55,8 +55,8 @@ elif selection == 4:
         subprocess.run(['curl', ['-O'], 'https://swcdn.apple.com/content/downloads/34/21/062-40406-A_GZQ27OUQER/ggclib72ow1omcvfexvp84bc9x5ei5tyqu/InstallAssistant.pkg'])
     else:
         print("Not confirmed, quitting")
-        os.quit(1)
+        sys.exit()
 else:
     print("Wrong input, please try again")
-    os.quit(1)
+    sys.exit()
 
